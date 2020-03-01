@@ -10,10 +10,12 @@
 // Write your code here
 function sum(a, b) {
      //eslint-disable-line
-     var s=a+b;
+     var s = a + b;
      var arr=[];
-     arr.push(s);
-     arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
+     arr[0]= s;
+     //arr.push(s);
+     //arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
+     arr[1]='The sum of ' + a + ' and ' + b + ' is ' + s + '.';
      return arr;
 
      
