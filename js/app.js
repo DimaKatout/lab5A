@@ -10,13 +10,15 @@
 // Write your code here
 function sum(a, b) {
      //eslint-disable-line
-     var s = a + b;
+     var s = parseInt(a) + parseInt(b);
      var arr=[];
      arr[0]= s;
      //arr.push(s);
      //arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
      arr[1]='The sum of ' + a + ' and ' + b + ' is ' + s + '.';
-     return arr;
+     alert(arr[1]);
+     //alert(arr[0]);
+     //testSum(4, 7);
 
      
 
@@ -24,10 +26,11 @@ function sum(a, b) {
 var a=prompt('first number');
 var b=prompt('second number');
 var su=sum(a,b);
+
 //alert('the sum is ' + su);
 
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+//testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -40,12 +43,20 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a, b) { var m = parseInt(a) * parseInt(b);
+     var arr=[];
+     arr[0]= m;
+     //arr.push(s);
+     //arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
+     arr[1]='The product of ' + a + ' and ' + b + ' is ' + m + '.';
+     alert(arr[1]);
+     //alert(arr[0]);
+     
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+ testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -61,12 +72,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c) {
+     var s1=sum(a, b);
+     var s2 =sum(s1,c);
+
+     var m1=multiply(a, b);
+     var m2=multiply(m1,c);
+
+     var arr=[];
+     arr[0]= s2;
+     arr[1]= m2;
+     arr[2]=a + ' and ' + b + ' and ' + c + ' sum to ' + s2 + '.';
+     //arr.push(s);
+     //arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
+     arr[3]='The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + m2 + '.';
+     alert(arr[4]);
+     //alert(arr[0]);
+     //testSum(4, 7);
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -83,7 +110,17 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { 
+     sum=0;
+     for (var i=0;i<sumArr.length;i++)
+     sum=sum+sumArr[i];
+     
+{
+
+
+
+
+}
 
 }
 
