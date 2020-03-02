@@ -86,7 +86,7 @@ function sumAndMultiply(a, b, c) {
      //arr.push(s);
      //arr.push('The sum of ' + a + ' and ' + b + ' is ' + s + '.');
      arr[3]='The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + m2 + '.';
-     alert(arr[4]);
+     alert(arr[3]);
      //alert(arr[0]);
      //testSum(4, 7);
 
@@ -110,23 +110,28 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { 
+function sumArray(testArray) { 
      sum=0;
-     for (var i=0;i<sumArr.length;i++)
-     sum=sum+sumArr[i];
-     
-{
+     //for (var i=0;i<3;i++)
+    {var arr=[];  //sum=sum+sumArr[i];
+     var s1=sum(testArray[0],testArray[1]);
+     var s2 =sum(s1,testArray[2]);}
+     arr[0]=s2;
+     arr[1]=testArray[0] + testArray[1] +testArray[2] + ' was passed in as an array of numbers, and ' + s2 +' is their sum' +'.'
+     alert(arr[1])
 
 
 
 
-}
+
+
+
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+ testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -141,7 +146,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(testArray) { 
+     var arr=[];
+
+    var m1= multiply(testArray[0],testArray[1]);
+    var mul =multiply(m1,testArray[2]);
+    arr[0]=mul;
+    arr[1]='The numbers ' + testArray[0] + testArray[1] +testArray[2] + ' have a product of ' + mul + '.'
+
 
 }
 
@@ -169,8 +181,18 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) {
+     var mul=1;
+     var arr = [];
 
+     for(var i =0 ;i<dynamicArray.length;i++)
+     {  mul= multiply(dynamicArray[i],dynamicArray[i+1]);
+          arr[0]=mul;
+      //arr[1]='The numbers '
+      alert(arr[0]);
+
+      } 
+      
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
