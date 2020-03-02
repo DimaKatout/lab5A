@@ -50,7 +50,7 @@ function multiply(a, b) { var m = parseInt(a) * parseInt(b);
      arr[1]='The product of ' + a + ' and ' + b + ' is ' + m + '.';
      alert(arr[1]);
      //alert(arr[0]);
-     
+     //return [m,'The product of ' + a + ' and ' + b + ' is ' + m + '.'];
 
 }
 var a=prompt('first number to multiply');
@@ -93,6 +93,18 @@ function sumAndMultiply(a, b, c) {
      //alert(arr[0]);
      //testSum(4, 7);
 
+
+     /*
+     var theSum =sum(a,sum(b,c)[0])[0];
+     var product = multiply(a,multiply(b,c)[0])[0])
+     var msg1=....
+     var msg2=....
+     return(theSum,product,msg1,msg2);
+     
+     
+     
+     */
+
 }
 
 var a=prompt('first number to find it\'s sum and it\'s multiply');
@@ -126,7 +138,13 @@ function sumArray(testArray) {
      arr[1]=testArray[0] + testArray[1] +testArray[2] + ' was passed in as an array of numbers, and ' + s2 +' is their sum' +'.'
      alert(arr[1])
 
+/* 
+var theSum=sum(sumArr[0],sum(sumArr[1],sumArr[2])[0])[0]))
+var msg =.....
+return(theSum,message)
 
+
+*/
 
 
 
@@ -188,12 +206,29 @@ function multiplyAnyArray(dynamicArray) {
      var arr = [];
 
      for(var i =0 ;i<dynamicArray.length;i++)
-     {  mul= multiply(dynamicArray[i],dynamicArray[i+1]);
+     {  //mul*=dynamicArray[i]
+          mul= multiply(dynamicArray[i],dynamicArray[i+1]);
           arr[0]=mul;
       //arr[1]='The numbers '
       alert(arr[0]);
 
       } 
+
+      /* 
+      var msg='numbers';
+      for(i=0;i<dynamicArray.length;i++)
+      {msg+=dynamicArray[i];
+     if(i<dynamicArray.length-1)
+{msg+=','}
+}
+msg+='prod od' + mul + '.'
+return (mul,msg)
+      
+      */
+      
+      
+      
+     
       
 }
 
