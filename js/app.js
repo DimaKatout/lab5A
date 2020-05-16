@@ -21,6 +21,10 @@ function sum(a, b) {
      //alert(arr[0]);
      //testSum(4, 7);
 
+  /*  var sum=a+b;
+     var msg =`The sum of ${a} and ${b} is ${sum}.`;
+     return [sum,msg];*/
+
      
 
 }
